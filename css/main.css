@@ -1,24 +1,63 @@
 * {
   font-family: "Outfit", serif;
+  background-color: beige;
 }
 
 /*HEADER*/
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   font-weight: 600;
   font-size: 1.2rem;
-  border: 2px solid black;
   display: inline;
   padding: 5px;
 }
 
+.sixtyfour-convergence-logo {
+  font-family: "Sixtyfour Convergence", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0px;
 }
 
+li {
+  margin-left: 3rem;
+}
+
 a {
   color: black;
+}
+
+@media screen and (max-width: 520px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 /*MAIN*/
@@ -27,14 +66,34 @@ a {
   width: 20%;
 }
 
+/*PROJECTS*/
+
+.projects-category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 520px) {
+  .projects-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .projects-category {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*CONTACTS*/
 
 figure {
   margin-left: 0;
-}
-
-.contact-image {
-  width: 10%;
 }
 
 /*FOOTER*/
