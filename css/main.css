@@ -1,18 +1,19 @@
 * {
   font-family: "Outfit", serif;
-  background-color: beige;
 }
 
 /*HEADER*/
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 2%;
 }
 
 #logo {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 2rem;
   display: inline;
   padding: 5px;
 }
@@ -22,11 +23,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0,
-    "XELA" 0,
-    "YELA" 0;
+  font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
 }
 
 ul {
@@ -41,6 +38,10 @@ li {
 
 a {
   color: black;
+}
+
+h1 {
+  color: coral;
 }
 
 @media screen and (max-width: 520px) {
@@ -70,7 +71,7 @@ a {
 
 .projects-category {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .project-image {
@@ -89,6 +90,21 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/*COFFEE TABLE BOOK*/
+/*  .container {
+  display: flex;
+  justify-content: space-between; 
+} */
+
+.coffee-table-one,
+.coffee-table-two {
+  width: 50%;
+}
+
+/* .coffee-table-two {
+  flex-direction: column-reverse; 
+} */
 
 /*CONTACTS*/
 
