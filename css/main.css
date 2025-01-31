@@ -15,7 +15,7 @@ header {
   font-weight: 800;
   font-size: 4rem;
   display: inline;
- }
+}
 
 ul {
   display: flex;
@@ -63,7 +63,7 @@ h4 {
   }
 }
 
-/*MAIN*/
+/*ABOUT ME*/
 
 .about-grid {
   display: grid;
@@ -75,7 +75,7 @@ h4 {
   width: 40%;
   grid-column: 1/2;
   padding-left: 30%;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 p {
@@ -88,6 +88,9 @@ p {
 
 /*PROJECTS*/
 
+h2 {
+  text-align: center;
+}
 .projects-category {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -128,12 +131,6 @@ figcaption {
   margin-right: 40%;
   grid-column: 3/3;
   text-align: center;
-}
-
-/*CONTACTS*/
-
-figure {
-  margin-left: 0;
 }
 
 /*FOOTER*/
